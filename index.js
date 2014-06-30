@@ -1,4 +1,4 @@
-var pg = require('pg.js');
+var pg = require('pg').native;
 
 exports.register = function(plugin, options, next) {
 
