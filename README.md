@@ -6,14 +6,15 @@ Wrap Hapi requests with access to a Postgres connection.
 
 It gives you access to `request.postgres.client` within your handlers which you can then use to make Postgres requests. It also takes care of cleaning up the connection after the request.
 
-Usage Hapi 6.x
---------------
+Usage
+-----
 ```js
 var hapiPgOpts = {
   connectionString: 'tcp://postgres@localhost:5432/postgres'
 };
 
-server.pack.register({
+// Hapi 6.x syntax
+server.pack.register({      
   plugin: require('hapi-pg'),
   options: HapiPgOpts,
 }, function(err) {
