@@ -18,8 +18,8 @@
     "url": "https://github.com/simplecampus/hapi-pg/issues"
   },
   "dependencies": {
-    "pg.js": ">2.10.0",
-    "pgpass": "0.0.2"
+    "pg": ">2.10.0",
+    "pgpass": "0.0.3"
   },
   "devDependencies": {
     "hapi": ">5.x.x",
